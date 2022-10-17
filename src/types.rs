@@ -97,6 +97,7 @@ pub enum UploadResult{
 }
 
 /// ImageInfo struct
+#[derive(Debug, Clone, Deserialize)]
 pub struct ImageInfo{
     /// path of the image uploaded
     pub src:String,

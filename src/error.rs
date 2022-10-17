@@ -1,6 +1,5 @@
-use serde::Deserialize;
 use std::{error, fmt};
-use std::fmt::{Formatter, write};
+use std::fmt::{Formatter};
 
 #[derive(Debug)]
 pub enum Error {
