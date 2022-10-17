@@ -8,7 +8,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .json::<HashMap<String, String>>()
         .await?;
     println!("{:#?}", resp);
-    println!("同步方式");
+    println!("--block request in tokio runtime--");
     spawn_blocking(move || {request_blocking()});
     // request_blocking();
     Ok(())
