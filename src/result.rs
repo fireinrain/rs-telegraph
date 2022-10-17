@@ -12,7 +12,7 @@ pub enum ApiResult<T> {
 impl <T> Into<Result<T,Error>> for ApiResult<T>{
     fn into(self) -> Result<T, Error> {
         match self {
-            ApiResult::Ok { result: v } => Ok(v),
+            ApiResult::OK { result: v } => Ok(v),
             ApiResult::Err { error: e, .. } => Err(Error::ApiError(e)),
         }
     }
