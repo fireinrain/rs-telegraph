@@ -1,6 +1,8 @@
 pub mod types;
 pub mod error;
 pub mod result;
+pub mod block;
+pub mod nonblock;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
